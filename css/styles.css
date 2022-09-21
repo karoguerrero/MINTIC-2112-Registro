@@ -303,7 +303,8 @@ svg {
 
 table {
   caption-side: bottom;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing:  25px 5px;
 }
 
 caption {
@@ -320,6 +321,7 @@ th {
 
 thead,
 tbody,
+//{border: 1px solid #000;}
 tfoot,
 tr,
 td,
@@ -595,7 +597,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
