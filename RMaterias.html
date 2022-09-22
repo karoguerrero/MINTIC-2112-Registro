@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Gestion de docentes</title>
+        <title>Gestion de Docentes</title>
 
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
-   <body background="assets/img/ideas.jpeg" background-repeat="no-repeat" height="100%" width="100%">
+   <body background="assets/img/muro.jpeg" background-repeat="no-repeat" height="100%" width="100%">
     
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
@@ -56,10 +56,10 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="RDocente.html">Docentes</a>
-                                    <a class="nav-link" href="PerfilEstudiante.html">Estudiantes</a>
-				    <a class="nav-link" href="PerfilMaterias.html">Materias</a>
-                                    <a class="nav-link" href="PerfilActividades.html">Actividades</a>
-				    <a class="nav-link" href="PerfilUsuarios.html">Usuarios</a>  
+                                    <a class="nav-link" href="REstudiante.html">Estudiantes</a>
+				    <a class="nav-link" href="tabladocente.html">Materias</a>
+                                    <a class="nav-link" href="tabladocente.html">Actividades</a>
+				    <a class="nav-link" href="RUsuario.html">Usuarios</a>   
                                 </nav>
                             </div>
 
@@ -145,75 +145,123 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Gestion de docentes</h1>
-
+                        <h1 class="mt-4">Docente</h1>                      
+                       
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Ejemplo de consulta
+                                Gestion de Notas y Actividades
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
                                         <tr>
-                                            <th>ID</th>
-                                            <th>username</th>
-                                            <th>password</th>
-                                            <th>Nombre</th>
-                                            <th>Estado</th>
+                                            <th>Estudiante</th>
+                                            <th>Materia</th>
+                                            <th>Nota1</th>
+                                            <th>Nota2</th>
+                                            <th>Nota3</th>
+                                            <th>Nota4</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>tiger@gmail.com</td>
-                                            <td>Edinburgh</td>
                                             <td>Tiger Nixon</td>
-                                            <td>Activo</td>
+                                            <td>Intro ingenieria</td>
+                                            <td>4.5</td>
+                                            <td>3.5</td>
+                                            <td>4.0</td>
+                                            <td>4.3</td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
-                                            <td>winter@hotmail.com</td>
-                                            <td>Tokyo</td>
                                             <td>Garrett Winters</td>
-                                            <td>Activo</td>
+                                            <td>Contabilidad</td>
+                                            <td>3.2</td>
+                                            <td>4.6</td>
+                                            <td>4.5</td>
+                                            <td>5.0</td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
-                                            <td>junior@gmail.com</td>
-                                            <td>Francisco</td>
                                             <td>Ashton Cox</td>
-                                             <td>Activo</td>
+                                            <td>Programacion 1</td>
+                                            <td>4.5</td>
+                                            <td>3.5</td>
+                                            <td>4.0</td>
+                                            <td>4.3</td>
                                         </tr>
                                         <tr>
-                                            <td>4</td>
-                                            <td>cedkel56@hotmail.com</td>
-                                            <td>Edinburgh</td>
                                             <td>Cedric Kelly</td>
-                                            <td>Activo</td>
+                                            <td>Java</td>
+                                              <td>3.2</td>
+                                            <td>4.6</td>
+                                            <td>4.5</td>
+                                            <td>5.0</td>
                                         </tr>
                                         <tr>
-                                            <td>5</td>
-                                            <td>airichan92@gmail.com</td>
-                                            <td>Tokyo</td>
                                             <td>Airi Satou</td>
-                                            <td>Activo</td>
+                                            <td>Contabilidad</td>
+                                             <td>4.5</td>
+                                            <td>3.5</td>
+                                            <td>4.0</td>
+                                            <td>4.3</td>
                                         </tr>
                                         <tr>
-                                            <td>6</td>
-                                            <td>briwill3@gmail.com</td>
-                                            <td>New York</td>
                                             <td>Brielle Williamson</td>
-                                            <td>Activo</td>
+                                            <td>Etica</td>
+                                             <td>3.2</td>
+                                            <td>4.6</td>
+                                            <td>4.5</td>
+                                            <td>5.0</td>
                                         </tr>
                                         <tr>
-                                            <td>7</td>
-                                            <td>rhonadb1@gmail.com</td>
-                                            <td>Tokyo</td>
-                                            <td>Rhona Davidson</td>
-                                            <td>Activo</td>
+                                            <td>Herrod Chandler</td>
+                                            <td>Ing economica</td>
+                                             <td>4.5</td>
+                                            <td>3.5</td>
+                                            <td>4.0</td>
+                                            <td>4.3</td>
                                         </tr>
+                                        <tr>
+                                            <td>Rhona Davidson</td>
+                                            <td>Etica</td>
+                                            <td>4.5</td>
+                                            <td>3.5</td>
+                                            <td>4.0</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Colleen Hurst</td>
+                                            <td>Proyectos1</td>
+                                              <td>3.2</td>
+                                            <td>4.6</td>
+                                            <td>4.5</td>
+                                            <td>5.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sonya Frost</td>
+                                            <td>Informatica</td>
+                                           <td>4.5</td>
+                                            <td>3.5</td>
+                                            <td>4.0</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                          <tr>
+                                            <td>Bradley Greer</td>
+                                            <td>Informatica</td>
+                                            <td>4.5</td>
+                                            <td>3.5</td>
+                                            <td>4.0</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jenette Caldwell</td>
+                                            <td>Programacion</td>
+                                              <td>3.2</td>
+                                            <td>4.6</td>
+                                            <td>4.5</td>
+                                            <td>5.0</td>
+                                        </tr>                                      
                                     </tbody>
                                 </table>
                             </div>
@@ -224,14 +272,11 @@
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; Your Website 2022</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </footer>
+				
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
