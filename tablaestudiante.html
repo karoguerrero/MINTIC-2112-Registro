@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Tables - SB Admin</title>
+        <title>Estudiante consulta</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -31,7 +31,7 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="login.html">Iniciar Seccion</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="register.html">¿Necesito una cuenta? ¡Inscribirse!</a></li>
+                        <li><a class="dropdown-item" href="register.html">¿Necesito una cuenta? ¡Inscribirme!</a></li>
                         <li><hr class="dropdown-divider" /></li>
                         <li><a class="dropdown-item" href="password.html">Restablecer la contraseña</a></li>
                     </ul>
@@ -56,40 +56,22 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="PerfilAdministrador.html">Administrador</a>
-                                    <a class="nav-link" href="PerfilDocente.html">Docente</a>
-									<a class="nav-link" href="PerfilEstudiante.html">Estudiante</a>
-                                    <a class="nav-link" href="PerfilEstudiante.html">Asignaturas</a>                                    
+				    <a class="nav-link" href="PerfilEstudiante.html">Estudiante</a>                                   
                                 </nav>
                             </div>
-
-                            <h4 class="btn btn-danger text-white">Docente</h4>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDocente" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Gistion del Docente
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapseDocente" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="PerfilDocente.html">Información personal</a>
-                                    <a class="nav-link" href="tabladocente.html">Registrar actividades </a>
-									<a class="nav-link" href="tabladocente.html">Calificar actividades</a>
-                                    <a class="nav-link" href="tabladocente.html">Retroalimentación </a>
-                                </nav>
-                            </div>
-                            
+                          
                             <h4 class="btn btn-danger text-white">Estudiante</h4>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsEstudiante" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                               Gestion del Estudiante
+                               Menu Estudiante
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapsEstudiante"  data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="PerfilEstudiante.html">Información personal</a>
-									<a class="nav-link" href="tabladocente.html">Materias matriculadas</a>
-                                    <a class="nav-link" href="tabladocente.html">Consula de notas</a>
-                                    <a class="nav-link" href="tabladocente.html">Detalle de actividades</a>     
+				    <a class="nav-link" href="tablaestudiante.html">Materias matriculadas</a>
+                                    <a class="nav-link" href="tablaestudiante.html">Consula de notas</a>
+                                    <a class="nav-link" href="tablaestudiante.html">Detalle de actividades</a>     
                                 </nav>
                             </div>
 
@@ -137,8 +119,8 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        <div class="small">Nova et vetera</div>
+                        Siempre antiguo, siempre nuevo
                     </div>
                 </nav>
             </div>
@@ -152,13 +134,13 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Gestion de Notas y Actividades
+                                Consulta de Notas y Actividades
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
                                         <tr>
-                                            <th>Estudiante</th>
+                                            <th>ID</th>
                                             <th>Materia</th>
                                             <th>Nota1</th>
                                             <th>Nota2</th>
@@ -166,194 +148,48 @@
                                             <th>Nota4</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Estudiante</th>
-                                            <th>Materia</th>
-                                            <th>Nota1</th>
-                                            <th>Nota2</th>
-                                            <th>Nota3</th>
-                                            <th>Nota4</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
+                                            <td>1</td>
+                                            <td>Matematicas</td>
                                             <td>4.5</td>
                                             <td>3.5</td>
                                             <td>4.0</td>
                                             <td>4.3</td>
                                         </tr>
                                         <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
+                                            <td>2</td>
+                                            <td>Ingles</td>
                                             <td>3.2</td>
                                             <td>4.6</td>
                                             <td>4.5</td>
                                             <td>5.0</td>
                                         </tr>
                                         <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>Junior Technical Author</td>
+                                            <td>3</td>
+                                            <td>Programacion</td>
                                             <td>4.5</td>
                                             <td>3.5</td>
                                             <td>4.0</td>
                                             <td>4.3</td>
                                         </tr>
                                         <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td>Senior Javascript Developer</td>
+                                            <td>4</td>
+                                            <td>Algebra</td>
                                               <td>3.2</td>
                                             <td>4.6</td>
                                             <td>4.5</td>
                                             <td>5.0</td>
                                         </tr>
                                         <tr>
-                                            <td>Airi Satou</td>
-                                            <td>Accountant</td>
+                                            <td>5</td>
+                                            <td>Fisica</td>
                                              <td>4.5</td>
                                             <td>3.5</td>
                                             <td>4.0</td>
                                             <td>4.3</td>
                                         </tr>
-                                        <tr>
-                                            <td>Brielle Williamson</td>
-                                            <td>Integration Specialist</td>
-                                             <td>3.2</td>
-                                            <td>4.6</td>
-                                            <td>4.5</td>
-                                            <td>5.0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Herrod Chandler</td>
-                                            <td>Sales Assistant</td>
-                                             <td>4.5</td>
-                                            <td>3.5</td>
-                                            <td>4.0</td>
-                                            <td>4.3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rhona Davidson</td>
-                                            <td>Integration Specialist</td>
-                                            <td>4.5</td>
-                                            <td>3.5</td>
-                                            <td>4.0</td>
-                                            <td>4.3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Colleen Hurst</td>
-                                            <td>Javascript Developer</td>
-                                              <td>3.2</td>
-                                            <td>4.6</td>
-                                            <td>4.5</td>
-                                            <td>5.0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sonya Frost</td>
-                                            <td>Software Engineer</td>
-                                           <td>4.5</td>
-                                            <td>3.5</td>
-                                            <td>4.0</td>
-                                            <td>4.3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jena Gaines</td>
-                                            <td>Office Manager</td>
-                                             <td>3.2</td>
-                                            <td>4.6</td>
-                                            <td>4.5</td>
-                                            <td>5.0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Quinn Flynn</td>
-                                            <td>Support Lead</td>
-                                             <td>4.5</td>
-                                            <td>3.5</td>
-                                            <td>4.0</td>
-                                            <td>4.3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Charde Marshall</td>
-                                            <td>Regional Director</td>
-                                              <td>3.2</td>
-                                            <td>4.6</td>
-                                            <td>4.5</td>
-                                            <td>5.0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Haley Kennedy</td>
-                                            <td>Senior Marketing Designer</td>
-                                            <td>3.2</td>
-                                            <td>4.6</td>
-                                            <td>4.5</td>
-                                            <td>5.0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tatyana Fitzpatrick</td>
-                                            <td>Regional Director</td>
-                                            <td>4.5</td>
-                                            <td>3.5</td>
-                                            <td>4.0</td>
-                                            <td>4.3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Michael Silva</td>
-                                            <td>Marketing Designer</td>
-                                            <td>4.5</td>
-                                            <td>3.5</td>
-                                            <td>4.0</td>
-                                            <td>4.3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Paul Byrd</td>
-                                            <td>Chief Financial Officer (CFO)</td>
-                                              <td>3.2</td>
-                                            <td>4.6</td>
-                                            <td>4.5</td>
-                                            <td>5.0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gloria Little</td>
-                                            <td>Systems Administrator</td>
-                                             <td>3.2</td>
-                                            <td>4.6</td>
-                                            <td>4.5</td>
-                                            <td>5.0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Bradley Greer</td>
-                                            <td>Software Engineer</td>
-                                            <td>4.5</td>
-                                            <td>3.5</td>
-                                            <td>4.0</td>
-                                            <td>4.3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dai Rios</td>
-                                            <td>Personnel Lead</td>
-                                              <td>3.2</td>
-                                            <td>4.6</td>
-                                            <td>4.5</td>
-                                            <td>5.0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jenette Caldwell</td>
-                                            <td>Development Lead</td>
-                                              <td>3.2</td>
-                                            <td>4.6</td>
-                                            <td>4.5</td>
-                                            <td>5.0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Yuri Berry</td>
-                                            <td>Chief Marketing Officer (CMO)</td>
-                                            <td>4.5</td>
-                                            <td>3.5</td>
-                                            <td>4.0</td>
-                                            <td>4.3</td>
-                                        </tr>
-                                       
+                                                                             
                                     </tbody>
                                 </table>
                             </div>
